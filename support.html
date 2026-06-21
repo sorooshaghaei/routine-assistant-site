@@ -8,54 +8,100 @@
   <meta name="description" content="Support, troubleshooting, and contact information for Henge.">
 
   <link rel="stylesheet" href="style.css">
-
   <link rel="icon" href="assets/favicon.ico">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <meta property="og:title" content="Henge Support">
   <meta property="og:description" content="Support, troubleshooting, and contact information for Henge.">
   <meta property="og:image" content="assets/og-image.png">
   <meta property="og:type" content="website">
 
-  <meta name="theme-color" content="#0f1115">
+  <meta name="theme-color" content="#fff8ef">
 </head>
 <body>
-  <main class="wrapper">
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="hero compact">
-      <img class="app-icon small" src="assets/henge-icon.png" alt="Henge app icon">
-      <h1>Support</h1>
-      <p>Need help with Henge? Use this page for support, bug reports, and basic troubleshooting.</p>
-    </section>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Henge home">
+        <img src="assets/henge-icon.png" alt="" class="brand-icon">
+        <span>HENGE</span>
+      </a>
 
-    <section class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:haselysoroosh@gmail.com">haselysoroosh@gmail.com</a></p>
-      <p>When reporting a bug, include your device model, iOS version, app version, and a short description of what happened.</p>
-    </section>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a aria-current="page" href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
 
-    <section class="card">
-      <h2>Common questions</h2>
+    <main id="main">
+      <section class="subpage-hero">
+        <img class="page-icon" src="assets/henge-icon.png" alt="Henge app icon">
+        <p class="eyebrow">Support</p>
+        <h1>Need help with Henge?</h1>
+        <p>Use this page for contact details, bug reports, backups, notifications, and local data questions.</p>
+      </section>
 
-      <h3>Where is my data stored?</h3>
-      <p>Your data is stored locally on your device.</p>
+      <section class="support-layout" aria-label="Support information">
+        <article class="contact-card">
+          <span class="card-kicker">Contact</span>
+          <h2>Email support</h2>
+          <p>Send support requests, privacy questions, and bug reports by email.</p>
+          <a class="email-link" href="mailto:haselysoroosh@gmail.com">haselysoroosh@gmail.com</a>
+        </article>
 
-      <h3>Can I back up my data?</h3>
-      <p>Yes. Open the app settings and use Export Backup to save a JSON backup. You can later import that file from the same settings area.</p>
+        <article class="info-card large-card">
+          <span class="card-kicker">Bug reports</span>
+          <h2>What to include</h2>
+          <p>When reporting a bug, include your device model, iOS version, app version, and a short description of what happened. Screenshots are useful when the issue is visual.</p>
+          <ul class="clean-list">
+            <li>Device model</li>
+            <li>iOS version</li>
+            <li>Henge app version</li>
+            <li>Steps that caused the issue</li>
+          </ul>
+        </article>
+      </section>
 
-      <h3>Why are notifications not appearing?</h3>
-      <p>Make sure notifications are enabled for Henge in iOS Settings and inside the app settings.</p>
+      <section class="faq-section" aria-labelledby="faq-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Common questions</p>
+          <h2 id="faq-title">Fast answers</h2>
+        </div>
 
-      <h3>Can I delete my data?</h3>
-      <p>Yes. You can delete local app data from the app settings. You can also delete the app from your device to remove its local data.</p>
-    </section>
+        <div class="faq-grid">
+          <article class="faq-card">
+            <h3>Where is my data stored?</h3>
+            <p>Your data is stored locally on your device.</p>
+          </article>
 
-    <p class="footer">© 2026 Henge. Last updated: 21 June 2026.</p>
-  </main>
+          <article class="faq-card">
+            <h3>Can I back up my data?</h3>
+            <p>Yes. Open the app settings and use Export Backup to save a JSON backup. You can later import that file from the same settings area.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Why are notifications not appearing?</h3>
+            <p>Make sure notifications are enabled for Henge in iOS Settings and inside the app settings.</p>
+          </article>
+
+          <article class="faq-card">
+            <h3>Can I delete my data?</h3>
+            <p>Yes. You can delete local app data from the app settings. You can also delete the app from your device to remove its local data.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Henge. Last updated: 21 June 2026.</p>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>

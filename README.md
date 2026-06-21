@@ -8,6 +8,7 @@ Static website for Henge App Store support and privacy links.
 - `support.html`
 - `privacy.html`
 - `style.css`
+- `site.webmanifest`
 - `assets/henge-icon.png`
 - `assets/apple-touch-icon.png`
 - `assets/favicon.ico`

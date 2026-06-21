@@ -4,59 +4,188 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HENGE — routine assistant</title>
+  <title>HENGE — Routine assistant for daily planning</title>
   <meta name="description" content="Henge is a routine assistant app for daily routines, habits, reminders, review notes, and personal schedule tracking.">
 
   <link rel="stylesheet" href="style.css">
-
   <link rel="icon" href="assets/favicon.ico">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
 
   <meta property="og:title" content="HENGE">
   <meta property="og:description" content="A routine assistant app for routines, habits, reminders, notes, and review.">
   <meta property="og:image" content="assets/og-image.png">
   <meta property="og:type" content="website">
 
-  <meta name="theme-color" content="#0f1115">
+  <meta name="theme-color" content="#fff8ef">
 </head>
 <body>
-  <main class="wrapper">
-    <nav aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="hero">
-      <img class="app-icon" src="assets/henge-icon.png" alt="Henge app icon">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Henge home">
+        <img src="assets/henge-icon.png" alt="" class="brand-icon">
+        <span>HENGE</span>
+      </a>
 
-      <h1>HENGE</h1>
-      <p>Henge is a routine assistant app for daily tasks, habits, reminders, review notes, and personal schedule tracking.</p>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a aria-current="page" href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
 
-      <p class="actions">
-        <a class="button" href="support.html">Get support</a>
-        <a class="button" href="privacy.html">Read privacy policy</a>
-      </p>
-    </section>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Local-first routine planning</p>
+          <h1 id="hero-title">Build a day that stays in balance.</h1>
+          <p class="hero-text">Henge is a routine assistant for daily tasks, habits, reminders, review notes, and personal schedule tracking. It keeps planning clear without forcing an account or cloud workflow.</p>
 
-    <section class="grid" aria-label="Henge features">
-      <div class="card">
-        <h2>Local-first</h2>
-        <p>Your routines, notes, and review history are stored locally on your device unless you export them yourself.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="support.html">Get support</a>
+            <a class="button secondary" href="privacy.html">Read privacy policy</a>
+          </div>
+
+          <dl class="proof-grid" aria-label="Henge highlights">
+            <div>
+              <dt>No account</dt>
+              <dd>Start locally</dd>
+            </div>
+            <div>
+              <dt>JSON backup</dt>
+              <dd>Export and import</dd>
+            </div>
+            <div>
+              <dt>Private</dt>
+              <dd>No third-party ads</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-label="Henge routine preview">
+          <div class="device-card">
+            <div class="device-topbar">
+              <img src="assets/henge-icon.png" alt="" class="device-icon">
+              <div>
+                <strong>Today</strong>
+                <span>Tuesday routine</span>
+              </div>
+            </div>
+
+            <div class="focus-card">
+              <span class="focus-label">Current block</span>
+              <h2>Morning reset</h2>
+              <p>Review priorities, clear inbox tasks, and start the first focused routine.</p>
+            </div>
+
+            <div class="task-list" aria-hidden="true">
+              <div class="task-row complete"><span></span><p>Hydrate and stretch</p><time>07:30</time></div>
+              <div class="task-row active"><span></span><p>Plan first work block</p><time>08:00</time></div>
+              <div class="task-row"><span></span><p>Review habit streaks</p><time>18:30</time></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip" aria-label="Core product promises">
+        <article>
+          <span class="feature-number">01</span>
+          <h2>Plan</h2>
+          <p>Structure tasks, habits, reminders, and fixed events in one daily view.</p>
+        </article>
+        <article>
+          <span class="feature-number">02</span>
+          <h2>Do</h2>
+          <p>Use routine blocks to keep the next action visible without extra noise.</p>
+        </article>
+        <article>
+          <span class="feature-number">03</span>
+          <h2>Review</h2>
+          <p>Capture notes and review history so tomorrow starts with context.</p>
+        </article>
+      </section>
+
+      <section class="section intro-section" aria-labelledby="why-title">
+        <div class="section-heading">
+          <p class="eyebrow">Why it exists</p>
+          <h2 id="why-title">A calmer planning layer for real days.</h2>
+        </div>
+        <div class="section-copy">
+          <p>Most routine tools either become rigid checklists or generic calendars. Henge sits between those modes: it gives your day a structure, keeps reminders close, and leaves enough room for review notes and changes.</p>
+        </div>
+      </section>
+
+      <section class="cards-grid" aria-label="Henge features">
+        <article class="info-card">
+          <span class="card-kicker">Storage</span>
+          <h3>Local-first</h3>
+          <p>Your routines, notes, and review history are stored locally on your device unless you export them yourself.</p>
+        </article>
+
+        <article class="info-card">
+          <span class="card-kicker">Privacy</span>
+          <h3>Private by design</h3>
+          <p>No account is required. The app does not use third-party advertising or third-party analytics.</p>
+        </article>
+
+        <article class="info-card">
+          <span class="card-kicker">Control</span>
+          <h3>Backup ready</h3>
+          <p>You can export and import your app data from the app settings using a JSON backup.</p>
+        </article>
+      </section>
+
+      <section class="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Daily flow</p>
+          <h2 id="workflow-title">A simple loop: set, act, review.</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>1</span>
+            <h3>Set the shape</h3>
+            <p>Define routines, tasks, habits, and fixed events for the day.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Follow the next block</h3>
+            <p>Keep the current action visible and reduce context switching.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Review and adjust</h3>
+            <p>Save notes, track what happened, and prepare a cleaner tomorrow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="privacy-band" aria-labelledby="privacy-title">
+        <div>
+          <p class="eyebrow">Data ownership</p>
+          <h2 id="privacy-title">Your planning data stays under your control.</h2>
+          <p>Henge does not require an account, does not use third-party advertising, and does not use third-party analytics. Backup files are created only when you choose to export them.</p>
+        </div>
+        <a class="button secondary" href="privacy.html">View privacy details</a>
+      </section>
+
+      <section class="final-cta" aria-labelledby="support-title">
+        <img src="assets/henge-icon.png" alt="" class="cta-icon">
+        <h2 id="support-title">Need help with Henge?</h2>
+        <p>Use the support page for contact details, bug report guidance, backups, notifications, and local data questions.</p>
+        <a class="button primary" href="support.html">Open support</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Henge. Last updated: 21 June 2026.</p>
+      <div>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
-
-      <div class="card">
-        <h2>Private by design</h2>
-        <p>No account is required. The app does not use third-party advertising or third-party analytics.</p>
-      </div>
-
-      <div class="card">
-        <h2>Backup ready</h2>
-        <p>You can export and import your app data from the app settings using a JSON backup.</p>
-      </div>
-    </section>
-
-    <p class="footer">© 2026 Henge. Last updated: 21 June 2026.</p>
-  </main>
+    </footer>
+  </div>
 </body>
 </html>
