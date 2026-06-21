@@ -17,9 +17,9 @@ Static website for Henge App Store support and privacy links.
 ## Public links
 
 Support:
-https://sorooshaghaei.github.io/routine-assistant-site/support.html
+https://sorooshaghaei.github.io/henge/support.html
 
 Privacy:
-https://sorooshaghaei.github.io/routine-assistant-site/privacy.html
+https://sorooshaghaei.github.io/henge/privacy.html
 
-Keep the `routine-assistant-site` path unless you also update the support and privacy URLs in App Store Connect.
+Keep the `henge` path unless you also update the support and privacy URLs in App Store Connect.
